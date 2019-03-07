@@ -1,0 +1,28 @@
+/*
+ * Main CSS of the website
+ */
+ 
+ html, body{
+	 
+	 height : 100%;
+ }
+ 
+ #Welcome{
+	 
+	 height : 100%;
+
+ }
+ 
+ #Welcome .container{
+	 height : 100%;
+	 max-width: 100%;
+	 background-size: 100%;
+	 background-position: center;
+	 background-repeat: no-repeat;
+
+ }
+ 
+ .right{
+	 
+	 float: right;
+ }
