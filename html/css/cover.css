@@ -1,0 +1,74 @@
+/*
+ * cover part CSS of the website
+ */
+ 
+#Welcome{
+	 
+	height : 100%;
+}
+ 
+#Welcome  .container{
+	height : 100%;
+	max-width: 100%;
+	padding: 3%;
+	 
+	background-size: cover;							/* 背景图铺满container*/
+	background-position: center;				/*  背景图居中 */
+	background-repeat: no-repeat;
+	text-align: center;						   /*  字体对齐方式 */
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #fff;    								/*  字体颜色 */
+	
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);  /* 字体阴影 */
+	 
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+					box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	
+ }
+
+.left{
+	float : left;
+}
+
+.right{
+	float : right;
+}
+
+.bar{
+	padding : 0;
+}
+ 
+.bar > li{
+	display : inline-block;
+}
+
+.bar a{
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+	
+	text-decoration: none;	/* remove default underline*/
+  border-bottom: 2px solid transparent;  /* add customized underline*/
+}
+
+#me a{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left: 20px;
+}
+
+
+.bar a:hover,
+.bar a:focus{
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);	
+}
+
+.bar> .active> a,
+.bar> .active> a:hover,
+.bar> .active> a:focus {
+	color: #fff;
+  border-bottom-color: #fff;
+}
