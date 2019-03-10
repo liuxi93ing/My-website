@@ -10,13 +10,6 @@ html, body{
 	box-sizing : border-box;
 }
 
-#Aboutme{
-	background-color:#178076; 
-	color: #fff; 
-	font-family:'Comic Sans MS', cursive, sans-serif;
-	margin: auto;
-}
-
 .left{
 	float : left;
 }
@@ -26,5 +19,33 @@ html, body{
 }
 
 .mid{
-	
+	text-align : center;
+	margin : auto;
+}
+
+#Aboutme{
+	background-color:#178076; 
+	color: #fff; 
+	font-family:'Comic Sans MS', cursive, sans-serif;
+}
+
+#Undergraduate{
+	background-color:#ededed;
+}
+
+#Graduate{
+	background-color:#dfdfdf;
+}
+
+#Projects{
+	background-color:#ededed;
+}
+
+#Skills{
+
+}
+
+#Slideshow{
+	padding : 10px; 
+	background-color : #dfdfdf;
 }

@@ -21,6 +21,7 @@
 		<!-- CSS of this page -->
 		<link rel="stylesheet" href="css/body.css" >
 		<link rel="stylesheet" href="css/cover.css" >
+		<link rel="stylesheet" href="css/slide.css" >
 
 	</head>
 	
@@ -60,6 +61,125 @@
 			</div>
 		
 		</section>
+		
+		<section id="Aboutme" >
+		
+			<div class = "container" style="padding:20px;">
+				<div class="row">
+					<div class="col" style="font-size:1.15em;">
+							
+						<div class="blank_divider" style="height: 15px;"></div>
+						
+						<p> My life may not be exciting or splendid, but it is enriched and peace. Research has taken most parts of my life. In my spare time, I used to play tons of video games just as other teens. My favorites are strategy games and I have been playing Hero3 up till now. I hit the gym regularly if time permits and I have finished half-marathon twice so far. Living in Calgary, skiing has gradually become my main outdoor activity during endless winter. Honestly, it could quite boring living abroad alone. Fortunately, a cutie has always been accompanying me who makes my life colorful. We visited many places, either for astonishing scenery or for taste of local cuisine. What's more, I like reading, especially fiction and history. But I feel ashamed of the number of books I read recently.</p>
+					
+					</div>
+				</div >
+				
+			</div>
+
+		</section>
+		
+		<section id="Slideshow" >
+			<!-- Container for the image gallery -->
+			<div class="container" >
+				<div class="row mid" >
+					<!-- Full-width images with number text -->
+					<div class="mySlides fade mid">
+						<img src="img/footprint.jpg" style="width:80%">
+					</div>
+
+					<div class="mySlides fade mid">
+						<img src="img/food.jpg" style="width:80%">
+					</div>
+
+					<div class="mySlides fade mid">
+						<img src="img/hobby.jpg" style="width:41%">
+					</div>
+
+					<div class="mySlides fade mid">
+						<img src="img/sport.jpg" style="width:80%">
+					</div>
+
+					<div class="mySlides fade mid">
+						<img src="img/scenery.jpg" style="width:80%">
+					</div>
+
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Image text -->
+					<div class="caption-container mid" style="width:80%;">
+						<p id="caption" style="margin:0px"></p>
+					</div>
+
+				</div>
+				<!-- Thumbnail images -->
+				<div class="row mid" style="width:80%">
+					<div class="column">
+						<img class="demo cursor" src="img/footprint.jpg" style="width:100%" onclick="currentSlide(1)" alt="Places stamped my footprints">
+					</div>
+					<div class="column"> 
+						<img class="demo cursor" src="img/food.jpg" style="width:100%" onclick="currentSlide(2)" alt="I am amateur foodie">
+					</div>
+					<div class="scolumn">
+						<img class="demo cursor" src="img/hobby.jpg" style="width:100%" onclick="currentSlide(3)" alt="I am pokemon go player....and I raised a bunny">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/sport.jpg" style="width:100%" onclick="currentSlide(4)" alt="Weights Lifting~Running~Swimming~Skiing ">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/scenery.jpg" style="width:100%" onclick="currentSlide(5)" alt="Amazing nature view">
+					</div> 
+
+				</div>
+			</div>
+	
+		</section>
+		
+		
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+		
+		
+		<!-- jquery.js -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<!-- bootstrap.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		
 	</body>
 	
 </html>

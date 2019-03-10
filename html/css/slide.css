@@ -1,0 +1,116 @@
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+	color: #178076;
+  padding: 0.5em;
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 3em;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #178076;
+  color: #fff;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color:#178076; 
+  color: #fff; 
+  font-family:'Comic Sans MS', cursive, sans-serif;
+  padding: 2px 16px;
+  font-size:1.25em;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* five columns side by side */
+.column {
+  float: left;
+  width: 22%;
+  padding: 5px;
+}
+.scolumn {
+  float: left;
+  width: 12%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.3;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode:forwards;
+   
+  animation-name: fade forwards;
+  animation-duration: 1.5s;
+  animation-fill-mode:forwards;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@media (max-width: 768px){
+  .prev,
+  .next {
+    padding: 0.1em;
+  }
+	
+}
